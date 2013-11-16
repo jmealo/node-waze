@@ -1,6 +1,6 @@
 {
   "name": "waze",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "client to fetch waze user trip data",
   "main": "index.js",
   "scripts": {
