@@ -39,6 +39,9 @@ waze.createClient(wazeLogin, function(err, client) {
 ```
 
 ## api
+    module.createClient(loginOpts, cb)
+      loginOpts = {user_id: "string", password: "string"}
+      cb = function(err, client)
 
     client#trips.get(cb)
       returns an array of user trip metadata
@@ -49,6 +52,6 @@ waze.createClient(wazeLogin, function(err, client) {
 
     cb = function(err, data){}
 
-## tests
+## test
 
     npm test
