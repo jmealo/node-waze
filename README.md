@@ -39,18 +39,18 @@ waze.createClient(wazeLogin, function(err, client) {
 ```
 
 ## api
-    module.createClient(loginOpts, cb)
-      loginOpts = {user_id: "string", password: "string"}
-      cb = function(err, client)
+module.createClient(loginOpts, cb)
+  loginOpts = {user_id: "string", password: "string"}
+  cb = function(err, client)
 
-    client#trips.get(cb)
-      returns an array of user trip metadata
+client#trips.get(cb)
+  returns an array of user trip metadata
 
-    client#trip.get(id, cb)
-      id = string trip id (from trips[i].id metadata)
-      returns an array of segment objects that make up the trip
+client#trip.get(id, cb)
+  id = string trip id (from trips[i].id metadata)
+  returns an array of segment objects that make up the trip
 
-    cb = function(err, data){}
+cb = function(err, data){}
 
 ## test
 
