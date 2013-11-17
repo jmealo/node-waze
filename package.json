@@ -20,7 +20,10 @@
   ],
   "devDependencies": {
     "tape": "~2.1.0",
-    "replay": "~1.9.0"
+    "replay": "~1.9.0",
+    "async": "~0.2.9",
+    "moment": "~2.4.0",
+    "cliff": "~0.1.8"
   },
   "repository": {
     "type": "git",
