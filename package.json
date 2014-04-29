@@ -7,10 +7,14 @@
     "test": "node test/index.js"
   },
   "author": "Tom Hummel",
+  "contributors": [
+      "Jeffrey Mealo <jeffreymealo@gmail.com> (http://jeffreymealo.com/)"
+  ],
   "license": "BSD-2-Clause",
   "dependencies": {
     "xml2js": "0.2.8",
-    "request": "2.27.0"
+    "request": "2.27.0",
+    "async": "0.7.0"
   },
   "keywords": [
     "waze",
@@ -21,7 +25,7 @@
   "devDependencies": {
     "tape": "~2.1.0",
     "replay": "~1.9.0",
-    "async": "~0.2.9",
+    "async": "~0.7.0",
     "moment": "~2.4.0",
     "cliff": "~0.1.8"
   },

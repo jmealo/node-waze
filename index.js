@@ -6,18 +6,18 @@
 
   module.exports = {
     createClient: function (opts, cb) {
-      opts = opts != null ? opts : {};
+      opts = opts || {};
 
       var client = {
         trip: trip,
         trips: trips
       };
 
-      if (jar.cookies._csrf_token == null) {
+      if (typeof jar.cookies._csrf_token === "undefined") {
         login(opts, function(err) {
           cb(err, client);
         });
-      }else{
+      } else {
         cb(null, client);
       }
     }

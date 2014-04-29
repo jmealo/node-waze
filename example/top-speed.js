@@ -1,10 +1,7 @@
 var waze = require("../index"),
     async = require("async"),
-    replay = require("replay"),
     moment = require("moment"),
     cliff = require("cliff");
-
-replay.fixtures = __dirname+"/fixtures";
 
 var wazeLogin = {
   user_id: "tphummel",
@@ -12,7 +9,12 @@ var wazeLogin = {
 }
 
 waze.createClient(wazeLogin, function(err, client) {
-  
+
+  if(err) {
+    console.error(err);
+    process.exit(1);
+  }
+
   var topSpeed = {};
 
   client.trips.get(function(err, trips) {
